@@ -115,7 +115,7 @@ The project was created using available sensors, focusing on implementing a **bu
 - Fully documented and modular
 - Separated into files:
   - `wifiConnection.py` for Wi-Fi
-  - `keys.py` for Adafruit IO credentials
+  - `keys.py` for Adafruit IO credentials and Wi-Fi credentials
   - `main.py` for logic
 
 > 📎 Code included in this repo:  
