@@ -44,6 +44,21 @@ The project was created using available sensors, focusing on implementing a **bu
 | Male-to-Female Dupont Cables (6 pcs) | <img src="img/malefemele.jpg" width="150"/> | 10 SEK |
 
 ---
+#### Raspberry Pi Pico WH
+
+The Raspberry Pi Pico WH 
+is a microcontroller board developed by the Raspberry Pi Foundation, built around the RP2040 chip. It features a dual-core ARM Cortex-M0+ processor, making it a capable and cost-effective solution for embedded systems and IoT projects. This WH variant comes pre-soldered with header pins for easier prototyping and includes built-in Wi-Fi connectivity. It also offers 128 kB of RAM and 2 MB of onboard flash memory, providing enough resources for a wide range of applications.
+
+
+#### Digital temperature and moisture sensor DHT11
+
+This module contains an internal thermistor and a capacitive humidity sensor. An internal chip converts the readings to a serial datastream which can be read by the Picos digital input pins. Its humidity range is between 20% to 90% RH, while its temperature range is 0ºC to 50ºC.
+
+#### Button (Key Switch Module (50mA, 12V)) ( i used 3.3V)
+
+This button outputs a high signal when pressed. It consists of a tactile push button and a pull-up resistor. It is used for resetting the water level, pumping manually, or calibrating the pump flow rate.
+
+
 
 ## 💻 Development Environment
 
@@ -53,6 +68,19 @@ The project was created using available sensors, focusing on implementing a **bu
 | 🧠 IDE | Thonny (no extra configuration needed) |
 
 ---
+
+### Flashing the Raspberry Pi Pico
+
+Flashing the Raspberry Pi Pico
+Before any development can begin, the Pico needs to be flashed with appropriate Firmware. Follow this guide for a thorough explanation: 
+Part 1: 
+ [Update Firmware on Raspberry Pi Pico W and run a test code](https://hackmd.io/@lnu-iot/rkFw7gao_), In short:
+
+Download the latest Pico W MicroPyton Firmware
+Press the Bootsel button on the Pico while connecting the usb to a computer.
+Drag and drop the firmware file into the Picos folder.
+Unplug and plug in the pico to restart it.
+Done!
 
 ## 🔌 Wiring Diagram
 
@@ -118,8 +146,36 @@ The project was created using available sensors, focusing on implementing a **bu
   - `keys.py` for Adafruit IO credentials and Wi-Fi credentials
   - `main.py` for logic
 
+
+  in `keys.py`  you should chande you ids to setup.
+
+
+  ## Example Python Script
+
+```
+import ubinascii
+import machine
+
+# Wi-Fi credentials
+WIFI_SSID = 'tp-link_2.4'   <---- SET YOUR credential
+WIFI_PASS = 'xxxxxxxxx'     <---- SET YOUR credential
+
+# Adafruit IO configuration 
+AIO_SERVER = "io.adafruit.com"
+AIO_PORT = 1883
+AIO_USER = "dz222cv"                    <---- SET YOUR credential
+AIO_KEY = "aio_xxxxxxxxxxxxxxxx"        <---- SET YOUR credential
+AIO_CLIENT_ID = ubinascii.hexlify(machine.unique_id())
+
+# Feed keys
+AIO_TEMPERATURE_FEED = "dz222cv/feeds/temperature" <---- SET YOUR credential  
+AIO_HUMIDITY_FEED = "dz222cv/feeds/humidity"       <---- SET YOUR credential
+AIO_BUTTON_FEED = "dz222cv/feeds/button"           <---- SET YOUR credential
+
+```
+
 > 📎 Code included in this repo:  
-[👉 View on GitHub](https://github.com/D4nielZ4k/Internet-of-Thing-project)
+[👉 View on GitHub](https://github.com/D4nielZ4k/Internet-of-Thing-project/blob/main/keys.py)
 
 ---
 
