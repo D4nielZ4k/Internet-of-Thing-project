@@ -37,7 +37,7 @@ The project was created using available sensors, focusing on implementing a **bu
 |----------|-------|-------|
 | Raspberry Pi Pico WH | <img src="img/pico.jpg" width="150"/> | 99 SEK |
 | USB-A to Micro-B Cable (1.8m) | <img src="img/usb.jpg" width="150"/> | 39 SEK |
-| Key Switch Module (50mA, 12V) | <img src="img/switch.jpg" width="150"/> | Included |
+| Key Switch Module (50mA, 12V) | <img src="img/Switch.jpg" width="150"/> | Included |
 | DHT11 Temperature & Humidity Sensor | <img src="img/dh11.jpg" width="150"/> | 49 SEK |
 | Breadboard | <img src="img/BreadBoard.jpg" width="150"/> | 69 SEK |
 | Male-to-Male Dupont Cables (2 pcs) | <img src="img/malemale.jpg" width="150"/> | ~3 SEK |
