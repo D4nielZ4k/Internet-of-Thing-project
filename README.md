@@ -14,12 +14,10 @@ This project connects a **Raspberry Pi Pico WH** with Wi-Fi capability to variou
 
 ## 🕒 Project Duration
 
-**Estimated Time:** ~4 weeks  
-Includes time for:
-- Exploring sensors  
-- Testing hardware  
-- Understanding IoT communication protocols  
-- Final integration and dashboard creation
+**Estimated Time:** ~3-7 hours  
+Creating and connecting all the components, as well as the configuration, should not take more than 7 hours.
+During this time, it should be possible to update the device, create an account on Adafruit, configure the account, create feeds, and copy the configuration to the device, including connecting to a Wi-Fi network and sending one request to the server.
+##
 
 ---
 
@@ -37,10 +35,10 @@ The project was created using available sensors, focusing on implementing a **bu
 |----------|-------|-------|
 | Raspberry Pi Pico WH | <img src="img/pico.jpg" width="150"/> | 99 SEK |
 | USB-A to Micro-B Cable (1.8m) | <img src="img/usb.jpg" width="150"/> | 39 SEK |
-| Key Switch Module (50mA, 12V) | <img src="img/Switch.jpg" width="150"/> | Included |
+| Key Switch Module (50mA, 12V) | <img src="img/Switch.jpg" width="150"/> | 19 SEK |
 | DHT11 Temperature & Humidity Sensor | <img src="img/dh11.jpg" width="150"/> | 49 SEK |
 | Breadboard | <img src="img/BreadBoard.jpg" width="150"/> | 69 SEK |
-| Male-to-Male Dupont Cables (2 pcs) | <img src="img/malemale.jpg" width="150"/> | ~3 SEK |
+| Male-to-Male Dupont Cables (2 pcs) | <img src="img/malemale.jpg" width="150"/> | ~3 SEK |a
 | Male-to-Female Dupont Cables (6 pcs) | <img src="img/malefemele.jpg" width="150"/> | 10 SEK |
 
 ---
